@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <aside class="side-header">
+        <img src="/side-img.avif" alt="leaf pictures">
+        <div class="side-header-container">
+            <img src="/odin-lined.png" alt="odin project image">
+            <div>ODIN</div>
+        </div>
+        <footer>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com">Unsplash</a></footer>
+    </aside>
+    <main>
+        <section class="section-header">
+            <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
+            <div>Sign up <em>now</em> to get started.</div>
+            <div>You <em>know</em> you want to.</div>
+            <div class="form-header">Let's do this!</div>
+        </section>
+        <form action="" onsubmit="return false">
+            <fieldset>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+            </fieldset>     
+            <fieldset>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="number">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="confirmpass">Confirm Password</label>
+                    <input type="password" name="confirmpass" id="confirmpass" onfocusout='check()'>
+                    <div id="match-pass">Hello</div>
+                </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <div>Already have an account? <a href="">Log in</a></div>
+    </main>
+</body>
+</html>

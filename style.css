@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(./Fonts/Norse-Bold.otf)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,700&display=swap');
+
+:root {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex: 2;
+    max-height: 100vh;
+    max-width: 70vw;
+    margin: 0 auto;
+    background-color: rgb(26, 26, 26);
+}
+
+.side-header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.side-header > img {
+    height: 100vh;
+    width: 25vw;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.side-header-container {
+    position: absolute;
+    top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 25vw;
+}
+
+.side-header-container > img {
+    height: 9rem;
+    padding: 1rem 0;
+}
+
+.side-header-container > div {
+    font-family: 'Norse Bold';
+    font-size: 5.5rem;
+    color: white;
+    letter-spacing: 0.2rem;
+} 
+
+.side-header > footer {
+    position: absolute;
+    top: 95vh;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.side-header > footer > a {
+    color: white;
+}
+
+main {
+    background-color: white;
+    max-width: 50vw;
+}
+
+.section-header {
+    padding: 15vh 12vw 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.form-header {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+form > fieldset {
+    padding-left: 2vw;
+    border: 0;
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+input {
+    margin-top: 5px;
+    width: 250px;
+    height: 25px;
+    border: 1px solid #abc7ffad;
+}
+
+input:focus {
+    outline: 2px solid rgb(92, 108, 255);
+    border-radius: 5px;
+    box-shadow: 3px 3px;
+}
+
+#match-pass {
+    font-size: 0.65rem;
+    margin-top: 10px;
+    letter-spacing: 0.1rem;
+    color: transparent;
+}
+
+button {
+    margin-bottom: 10px;
+    margin-left: 2vw;
+    padding: 20px 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #596D48;
+    border: 0px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main > div {
+    padding: 0 12vw 0 2vw;
+    font-weight: 700;
+}
+
+main > div > a {
+    text-decoration: none;
+    color: #596D48
+}
